@@ -176,15 +176,15 @@
 <div class="results" id="results"></div>
 <button class="fab" id="addFab" title="Add a movie">+</button>
 
-<div class="savebar" id="savebar">
+<div class="savebar show" id="savebar">
   <span class="msg" id="saveMsg">Unsaved changes — download &amp; upload to GitHub</span>
   <button id="saveBtn">Save index.html</button>
 </div>
 
 <div class="overlay" id="overlay">
   <div class="sheet">
-    <h2 id="mTitle">Edit</h2>
-    <div class="sub" id="mSub">Update details, move between Have and Want, or delete.</div>
+    <h2 id="mTitle">Add a movie</h2>
+    <div class="sub" id="mSub">New entries default to your Want list.</div>
     <div class="dupwarn" id="dup">Already on your list: <b>Magnificent Seven 1960</b> — marked <b>Have</b>. Add anyway only if this is a different edition.</div>
     <div class="field"><label>Title</label><input id="fTitle" autocomplete="off"></div>
     <div class="field"><label>Year</label><input id="fYear" inputmode="numeric" autocomplete="off" placeholder="optional"></div>
@@ -192,14 +192,14 @@
     <div class="field"><label>Notes</label><input id="fNotes" autocomplete="off" placeholder="optional — edition, etc."></div>
     <div class="field"><label>Status</label>
       <div class="seg">
-        <button data-s="Have" aria-pressed="true">Have</button>
-        <button data-s="Want" aria-pressed="false">Want</button>
+        <button data-s="Have" aria-pressed="false">Have</button>
+        <button data-s="Want" aria-pressed="true">Want</button>
       </div>
     </div>
     <div class="actions">
-      <button class="btn-danger" id="delBtn" style="display: block;">Delete</button>
+      <button class="btn-danger" id="delBtn" style="display: none;">Delete</button>
       <button class="btn-ghost" id="cancelBtn">Cancel</button>
-      <button class="btn-primary" id="okBtn">Save</button>
+      <button class="btn-primary" id="okBtn">Add</button>
     </div>
     <div class="hint" id="saveHint"></div>
   </div>
